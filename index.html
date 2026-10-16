@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohamed Kamal – Frontend Web Developer. Explore my real projects, skills, and get in touch." />
+  <meta name="keywords" content="Mohamed Kamal, web developer, portfolio, HTML, CSS, JavaScript, React, TypeScript, frontend" />
+  <meta name="author" content="Mohamed Kamal" />
+  <meta property="og:title" content="Mohamed Kamal | Frontend Developer Portfolio" />
+  <meta property="og:description" content="Passionate frontend developer building modern, responsive web experiences." />
+  <title>Mohamed Kamal | Frontend Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Loading<span class="dots"></span></span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" id="nav-logo" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Mohamed<span class="logo-slash">/</span>Kamal<span class="logo-bracket">&gt;</span>
+      </a>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home"     class="nav-link active" id="link-home">Home</a></li>
+        <li><a href="#about"    class="nav-link" id="link-about">About</a></li>
+        <li><a href="#skills"   class="nav-link" id="link-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+        <li><a href="#resume"   class="nav-link" id="link-resume">Resume</a></li>
+        <li><a href="#contact"  class="nav-link" id="link-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Mohamed Kamal</h1>
+      <div class="hero-title">
+        <span class="title-prefix">I'm a&nbsp;</span>
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        I craft <strong>responsive</strong>, <strong>performant</strong> web experiences using modern technologies like React, TypeScript &amp; Node.js.
+        Turning ideas into pixel-perfect digital products.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+          <i class="fa-solid fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline" id="btn-hire-me">
+          <i class="fa-solid fa-envelope"></i> Hire Me
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/MohamedKamal100" target="_blank" class="social-link" id="social-github" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#" class="social-link" id="social-codepen" aria-label="CodePen">
+          <i class="fa-brands fa-codepen"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-img-glow"></div>
+      <img src="images/profile.png" alt="Mohamed Kamal – Frontend Developer" class="hero-img" id="hero-profile-img" />
+      <div class="hero-badge" id="badge-available">
+        <span class="badge-dot"></span> Available for work
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" id="scroll-indicator" aria-label="Scroll to about section">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <div class="about-img-wrapper">
+            <img src="images/profile.png" alt="Mohamed Kamal" class="about-img" id="about-profile-img" />
+            <div class="about-exp-badge">
+              <span class="exp-num">36+</span>
+              <span class="exp-label">Public<br/>Repos</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-target="36">0</span>+
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="3">0</span>+
+              <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="8">0</span>+
+              <span class="stat-label">Following</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <h3 class="about-subtitle">Passionate Frontend Developer &amp; Problem Solver</h3>
+          <p class="about-text">
+            I'm <strong>Mohamed Kamal</strong>, a self-driven frontend developer with a passion for building clean,
+            user-friendly digital experiences. I joined GitHub in June 2023 and have since built an impressive collection
+            of 36+ public repositories spanning HTML/CSS, JavaScript, React, TypeScript, and Node.js projects.
+          </p>
+          <p class="about-text">
+            I specialize in front-end development with a strong grasp of modern JavaScript, React, and TypeScript.
+            My projects range from beautiful UI components and landing pages to full-stack applications with backend APIs.
+            I love turning complex problems into clean, elegant solutions.
+          </p>
+          <p class="about-text">
+            When I'm not coding, I'm exploring the latest design trends, contributing to open-source, 
+            and continuously pushing my skills to the next level through real-world projects.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user"></i>
+              <span><strong>Name:</strong> Mohamed Kamal</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-brands fa-github"></i>
+              <span><strong>GitHub:</strong> @MohamedKamal100</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-calendar"></i>
+              <span><strong>Member Since:</strong> June 2023</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-code-branch"></i>
+              <span><strong>Repos:</strong> 36+ Public</span>
+            </div>
+          </div>
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary" id="btn-about-contact"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
+            <a href="https://github.com/MohamedKamal100" target="_blank" class="btn btn-outline" id="btn-about-github"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What I work with</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-cards-col reveal">
+          <h3 class="skills-subtitle">Technologies</h3>
+          <div class="skills-cards">
+            <div class="skill-card" id="skill-html">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#e44d26,#f16529);"><i class="fa-brands fa-html5"></i></div>
+              <span class="skill-card-name">HTML5</span>
+            </div>
+            <div class="skill-card" id="skill-css">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#264de4,#2965f1);"><i class="fa-brands fa-css3-alt"></i></div>
+              <span class="skill-card-name">CSS3</span>
+            </div>
+            <div class="skill-card" id="skill-js">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#f7df1e,#e4c500);color:#000;"><i class="fa-brands fa-js"></i></div>
+              <span class="skill-card-name">JavaScript</span>
+            </div>
+            <div class="skill-card" id="skill-ts">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#3178c6,#235a9e);"><i class="fa-solid fa-t"></i></div>
+              <span class="skill-card-name">TypeScript</span>
+            </div>
+            <div class="skill-card" id="skill-react">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#00b4d8,#0077b6);"><i class="fa-brands fa-react"></i></div>
+              <span class="skill-card-name">React</span>
+            </div>
+            <div class="skill-card" id="skill-node">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#3c873a,#68a063);"><i class="fa-brands fa-node-js"></i></div>
+              <span class="skill-card-name">Node.js</span>
+            </div>
+            <div class="skill-card" id="skill-git">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#f34f29,#c73c20);"><i class="fa-brands fa-git-alt"></i></div>
+              <span class="skill-card-name">Git</span>
+            </div>
+            <div class="skill-card" id="skill-bootstrap">
+              <div class="skill-card-icon" style="background:linear-gradient(135deg,#7952b3,#563d7c);"><i class="fa-brands fa-bootstrap"></i></div>
+              <span class="skill-card-name">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-bars-col reveal">
+          <h3 class="skills-subtitle">Proficiency</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>HTML &amp; CSS</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95" style="background:linear-gradient(90deg,#e44d26,#264de4);"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>JavaScript</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88" style="background:linear-gradient(90deg,#f7df1e,#e44d26);"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>React</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85" style="background:linear-gradient(90deg,#00b4d8,#0077b6);"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>TypeScript</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75" style="background:linear-gradient(90deg,#3178c6,#235a9e);"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Node.js / NestJS</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70" style="background:linear-gradient(90deg,#3c873a,#68a063);"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>UI/UX Design</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80" style="background:linear-gradient(90deg,#a259ff,#1abcfe);"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What I've built</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="project-filters reveal">
+        <button class="filter-btn active" id="filter-all" data-filter="all">All</button>
+        <button class="filter-btn" id="filter-frontend" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" id="filter-react" data-filter="react">React</button>
+        <button class="filter-btn" id="filter-javascript" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" id="filter-fullstack" data-filter="fullstack">Full Stack</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 1: Prayer Times -->
+        <div class="project-card reveal" data-category="javascript frontend">
+          <div class="project-img-wrap">
+            <img src="images/project1.png" alt="Prayer Times App" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://github.com/MohamedKamal100/Prayer-Times" target="_blank" class="overlay-btn" id="proj1-code"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://mohamedkamal100.github.io/Prayer-Times/" target="_blank" class="overlay-btn" id="proj1-demo"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <h3 class="project-title">Prayer Times</h3>
+            <p class="project-desc">A beautiful Islamic prayer times web app with location detection, countdown timer to the next prayer, and elegant UI with Islamic geometric patterns.</p>
+            <div class="project-footer">
+              <a href="https://github.com/MohamedKamal100/Prayer-Times" target="_blank" class="proj-link" id="proj1-view">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Food Explorer -->
+        <div class="project-card reveal" data-category="react frontend javascript">
+          <div class="project-img-wrap">
+            <img src="images/project2.png" alt="Food Explorer App" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://github.com/MohamedKamal100/Food-explorer" target="_blank" class="overlay-btn" id="proj2-code"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://mohamedkamal100.github.io/Food-explorer/" target="_blank" class="overlay-btn" id="proj2-demo"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+            <h3 class="project-title">Food Explorer</h3>
+            <p class="project-desc">Discover recipes from around the world with a premium React-powered food explorer featuring smart search, favorites, global cuisines, and immersive UI/UX.</p>
+            <div class="project-footer">
+              <a href="https://github.com/MohamedKamal100/Food-explorer" target="_blank" class="proj-link" id="proj2-view">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Apex Fitness -->
+        <div class="project-card reveal" data-category="react frontend javascript">
+          <div class="project-img-wrap">
+            <img src="images/project3.png" alt="Apex Fitness Website" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://github.com/MohamedKamal100/apex-fitness" target="_blank" class="overlay-btn" id="proj3-code"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://mohamedkamal100.github.io/apex-fitness/" target="_blank" class="overlay-btn" id="proj3-demo"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <h3 class="project-title">Apex Fitness</h3>
+            <p class="project-desc">A modern, responsive gym landing page built with React. Showcases UI/UX skills, component architecture, and responsive web design with bold fitness aesthetics.</p>
+            <div class="project-footer">
+              <a href="https://github.com/MohamedKamal100/apex-fitness" target="_blank" class="proj-link" id="proj3-view">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Portfolio -->
+        <div class="project-card reveal" data-category="fullstack react frontend">
+          <div class="project-img-wrap">
+            <img src="images/project1.png" alt="Portfolio Website" class="project-img" loading="lazy" style="filter:hue-rotate(120deg);" />
+            <div class="project-overlay">
+              <a href="https://github.com/MohamedKamal100/Mohamed-Kamal-Portfolio" target="_blank" class="overlay-btn" id="proj4-code"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://mohamedkamal100.github.io/Mohamed-Kamal-Portfolio/" target="_blank" class="overlay-btn" id="proj4-demo"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">NestJS</span>
+            </div>
+            <h3 class="project-title">Developer Portfolio</h3>
+            <p class="project-desc">Modern Full Stack Developer Portfolio featuring React, Next.js, NestJS, TypeScript, interactive animations, project case studies, and responsive premium UI/UX.</p>
+            <div class="project-footer">
+              <a href="https://github.com/MohamedKamal100/Mohamed-Kamal-Portfolio" target="_blank" class="proj-link" id="proj4-view">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Password Generator -->
+        <div class="project-card reveal" data-category="javascript frontend">
+          <div class="project-img-wrap">
+            <img src="images/project2.png" alt="Password Generator" class="project-img" loading="lazy" style="filter:hue-rotate(240deg);" />
+            <div class="project-overlay">
+              <a href="https://github.com/MohamedKamal100/password_generator" target="_blank" class="overlay-btn" id="proj5-code"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://mohamedkamal100.github.io/password_generator/" target="_blank" class="overlay-btn" id="proj5-demo"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <h3 class="project-title">Password Generator</h3>
+            <p class="project-desc">A lightweight Vanilla JavaScript Password Generator that creates strong, secure, and customizable passwords instantly. Built with pure HTML, CSS, and JavaScript without any libraries.</p>
+            <div class="project-footer">
+              <a href="https://github.com/MohamedKamal100/password_generator" target="_blank" class="proj-link" id="proj5-view">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: YouTube Clone -->
+        <div class="project-card reveal" data-category="frontend javascript">
+          <div class="project-img-wrap">
+            <img src="images/project3.png" alt="YouTube Clone" class="project-img" loading="lazy" style="filter:hue-rotate(300deg);" />
+            <div class="project-overlay">
+              <a href="https://github.com/MohamedKamal100/Youtube-clone" target="_blank" class="overlay-btn" id="proj6-code"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://mohamedkamal100.github.io/Youtube-clone/" target="_blank" class="overlay-btn" id="proj6-demo"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">YouTube Clone</h3>
+            <p class="project-desc">A pixel-perfect YouTube UI clone featuring a responsive video grid layout, sidebar navigation, search bar, and dark-themed design faithful to the original platform.</p>
+            <div class="project-footer">
+              <a href="https://github.com/MohamedKamal100/Youtube-clone" target="_blank" class="proj-link" id="proj6-view">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-more reveal">
+        <a href="https://github.com/MohamedKamal100?tab=repositories" target="_blank" class="btn btn-outline" id="btn-github-all">
+          <i class="fa-brands fa-github"></i> View All 36+ Repos on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">My Journey</p>
+        <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="resume-grid">
+        <div class="resume-col reveal">
+          <h3 class="resume-col-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023 – Present</span>
+                <h4>Freelance Frontend Developer</h4>
+                <p>Self-Employed &middot; Remote</p>
+                <p>Building responsive web applications using React, TypeScript, and modern CSS. Delivered 36+ projects including fitness platforms, food explorers, and portfolio sites.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023</span>
+                <h4>Open Source Contributor</h4>
+                <p>GitHub &middot; Remote</p>
+                <p>Actively developing and publishing open-source web projects covering HTML/CSS components, JavaScript apps, and React applications.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023</span>
+                <h4>UI/UX Developer</h4>
+                <p>Personal Projects</p>
+                <p>Designed and built premium UI components including profile cards, avatars, landing pages, and interactive web apps with modern aesthetics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-col reveal">
+          <h3 class="resume-col-title"><i class="fa-solid fa-graduation-cap"></i> Education &amp; Certifications</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023 – Present</span>
+                <h4>Self-Taught Web Developer</h4>
+                <p>Online Platforms</p>
+                <p>Mastering frontend development through hands-on projects, documentation, and continuous learning on freeCodeCamp, Udemy, and YouTube.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h4>React &amp; TypeScript Mastery</h4>
+                <p>Project-Based Learning</p>
+                <p>Built full-stack apps using React, TypeScript, NestJS, and Next.js. Implemented real-world features including authentication, APIs, and responsive design.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h4>Bootstrap Workshop</h4>
+                <p>Hands-On Training</p>
+                <p>Completed a comprehensive Bootstrap workshop, building responsive landing pages and UI components with the Bootstrap framework.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resume-download reveal">
+        <p class="resume-cta-text">Want to know more? Download my full resume or check out my GitHub.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="resume.pdf" download class="btn btn-primary btn-lg" id="btn-download-resume">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+          <a href="https://github.com/MohamedKamal100" target="_blank" class="btn btn-outline btn-lg" id="btn-github-resume">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3 class="contact-info-title">Let's work together!</h3>
+          <p class="contact-info-text">
+            I'm currently available for freelance projects and exciting full-time opportunities.
+            Whether you have a project in mind, want to collaborate, or just want to say hi — I'd love to hear from you!
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div><strong>GitHub</strong><p>github.com/MohamedKamal100</p></div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div><strong>Email</strong><p>mohamedkamal@example.com</p></div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
+              <div><strong>Portfolio</strong><p>36+ projects on GitHub</p></div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/MohamedKamal100" target="_blank" class="contact-social-link" id="contact-github" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="contact-social-link" id="contact-linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="contact-social-link" id="contact-twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="contact-social-link" id="contact-dribbble" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="input-name">Full Name</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="input-name" name="name" placeholder="John Doe" autocomplete="name" />
+              </div>
+              <span class="field-error" id="error-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="input-email">Email Address</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="input-email" name="email" placeholder="john@example.com" autocomplete="email" />
+              </div>
+              <span class="field-error" id="error-email"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input-subject">Subject</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-tag input-icon"></i>
+              <input type="text" id="input-subject" name="subject" placeholder="Project Collaboration" />
+            </div>
+            <span class="field-error" id="error-subject"></span>
+          </div>
+          <div class="form-group">
+            <label for="input-message">Message</label>
+            <div class="input-wrap textarea-wrap">
+              <i class="fa-solid fa-message input-icon"></i>
+              <textarea id="input-message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <span class="field-error" id="error-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-send-message">
+            <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+            <span class="btn-loading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Message sent successfully! I'll get back to you soon. 🎉</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Mohamed<span class="logo-slash">/</span>Kamal<span class="logo-bracket">&gt;</span>
+      </a>
+      <p class="footer-copy">&copy; 2025 Mohamed Kamal. Crafted with <i class="fa-solid fa-heart" style="color:#f43f5e;"></i> &amp; passion.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
